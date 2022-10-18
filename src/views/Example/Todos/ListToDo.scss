@@ -1,0 +1,34 @@
+.list-todo-container{
+
+    button {
+        // di chuyển chuột vào button thì nó hiện ra hình bàn tay
+        cursor: pointer;
+    }
+
+
+    .ass-todo{
+
+        .add{
+            margin: 0 10px;
+        }
+    }
+    .list-todo-content{
+        width: 400px;
+        margin: 0 auto;
+
+        .todo-child{
+            &:first-child{   // scss cho dòng đầu tiên màu vàng
+                // background-color: yellowgreen;
+                border-top: 1px solid gray;
+            }
+            height: 40px;
+            border-bottom: 1px solid gray;
+            margin: 10px;
+            // . là class trong scss
+
+            .edit{
+                margin: 0 10px;
+            }
+        }
+    }
+}
